@@ -1,0 +1,16 @@
+# 配置端口
+server:
+  port: 80
+
+# 配置数据库连接
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/babytuan?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+
+# 配置mybatis依赖的mapper路径
+# tips：classpath指项目编译后，在tomcat(也可以是别的服务器)中的WEB-INF/classes
+mybatis:
+  mapper-localtions: classpath:/mapper/*.xml
