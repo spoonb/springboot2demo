@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>哇爱 孕产妇入院专用待产包【尖叫升级】12件套送8件升级为20件套待产包【专家型】</title>
-    <link href="../static/layui/css/layui.css" rel="stylesheet">
-    <script src="../static/layui/layui.all.js"></script>
+    <title>${goods.title}</title>
+    <link href="./layui/css/layui.css" rel="stylesheet">
+    <script src="./layui/layui.all.js"></script>
     <style>
         .bb-info li {
             margin-top: 20px;
@@ -35,49 +35,38 @@
 
 <div class="layui-container" style="padding: 10px;border: 1px solid #ccc;background-color:white">
     <span class="layui-breadcrumb" style="visibility: visible;">
-      <a href="/static">首页</a><span lay-separator="">/</span>
-      <a><cite>哇爱 孕产妇入院专用待产包【尖叫升级】12件套送8件升级为20件套待产包【专家型】</cite></a>
+      <a href="/">首页</a><span lay-separator="">/</span>
+      <a><cite>${goods.title}</cite></a>
     </span>
     <div class="layui-row" style="padding-top: 10px">
         <div class="layui-col-xs4">
             <div class="layui-carousel" id="test1">
                 <div carousel-item>
+                    <#list covers as cover>
                     <div>
-                        <img src="http://img04.meituncdn.com/group1/M00/9A/41/d7e5412c253b43a69f95f099a581f448.jpg?imageView2/2/w/450/h/450"
-                             style="width:100%">
+                        <img src="${cover.gcPicUrl}" style="width:100%">
                     </div>
-                    <div><img
-                            src="http://img03.meituncdn.com/group1/M00/8D/81/b91f54b8165f4c038df83401668b4cc3.jpg?imageView2/2/w/450/h/450"
-                            style="width:100%"></div>
-                    <div><img
-                            src="http://img04.meituncdn.com/group1/M00/C1/27/274f1e1e3bc345e8938272c1f295dc1b.jpg?imageView2/2/w/450/h/450"
-                            style="width:100%"></div>
-                    <div><img
-                            src="http://img02.meituncdn.com/group1/M00/76/5C/5c997f6ac8be47198de767f4c7aafa64.jpg?imageView2/2/w/450/h/450"
-                            style="width:100%"></div>
-                    <div><img
-                            src="http://img03.meituncdn.com/group1/M00/BE/EB/8d07feb9ebbe45d2a091da322d3ad8ea.jpg?imageView2/2/w/450/h/450"
-                            style="width:100%"></div>
+                    </#list>
                 </div>
             </div>
         </div>
         <div class="layui-col-xs8" style="padding: 10px">
             <ul class="bb-info">
                 <li>
-                    <h2>哇爱 孕产妇入院专用待产包【尖叫升级】12件套送8件升级为20件套待产包【专家型】</h2>
+                    <h2>${goods.title}</h2>
                 </li>
 
                 <li class="layui-bg-green" style="padding:10px;line-height: 30px">
-                    哇爱实用型待产包，【尖叫升级】12件套送8件升级为20件套待产包【专家型】，甄选优质材料，无尘环境操作，医用全棉，柔软舒适，哺乳透气干爽，专注孕妈用品安全，产妇入院待产推荐。
+                ${goods.subTitle}
                 </li>
 
                 <li style="color: darkgrey">
-                    <span>宝宝团价：</span><span style="font-size: 26px;color: orange;font-weight: bold">¥19.8</span><span
-                        style="text-decoration: line-through">¥78.0</span>
+                    <span>宝宝团价：</span><span style="font-size: 26px;color: orange;font-weight: bold">${goods.currentPrice?string('¥0.00')}</span><span
+                        style="text-decoration: line-through">¥${goods.originalCost?string('¥0.00')}</span>
                 </li>
 
                 <li>
-                    <span>运费： 6.0元 满58.0元包邮</span>
+                    <span>运费： 6.0元 <#if goods.isFreeDelivery == 1>满58.0元包邮</#if></span>
                 </li>
                 <li>
                     数量：
@@ -105,19 +94,9 @@
             </ul>
             <div class="layui-tab-content">
                 <div class="layui-tab-item layui-show bb-description layui-col-xs8 layui-col-xs-offset2">
-                    <img src="http://img02.meituncdn.com/group1/M00/8E/F1/f10f05fe0ce149d8b01d704b8e48d9cb.jpg">
-                    <img src="http://img01.meituncdn.com/group1/M00/47/31/fc17706447314d32acb89c8fd9af328f.jpg">
-                    <img src="http://img03.meituncdn.com/group1/M00/D7/1C/715dadd2b46145f98591ced7a6dd2db2.jpg">
-                    <img src="http://img02.meituncdn.com/group1/M00/6A/8C/b6af58e38f8c47778ece2dcc808550f7.jpg">
-                    <img src="http://img04.meituncdn.com/group1/M00/7C/A7/6ace72c2cab24294a7797ce5af6093bc.jpg">
-                    <img src="http://img02.meituncdn.com/group1/M00/A7/CA/60a34e86b547408da78cc5ca0bc41d07.jpg">
-                    <img src="http://img02.meituncdn.com/group1/M00/B8/75/cb8f05e27cd84e31b8f7f269175941ac.jpg">
-                    <img src="http://img05.meituncdn.com/group1/M00/6D/23/f6d26edbea7d4fa4aa5889fe23a546b4.jpg">
-                    <img src="http://img05.meituncdn.com/group1/M00/A4/D6/8738b21a741e4d369b6454a4ea01d622.jpg">
-                    <img src="http://img01.meituncdn.com/group1/M00/06/21/5f53ed18ba4948e9ba52140560060770.jpg">
-                    <img src="http://img04.meituncdn.com/group1/M00/C2/A3/c201ad7da34c4738a479febedc643fbb.jpg">
-                    <img src="http://img03.meituncdn.com/group1/M00/49/14/dd750f514bf041d48262a3a191d49baf.jpg">
-                    <img src="http://img01.meituncdn.com/group1/M00/0D/0D/07813fecb8b74bc8a869360dafc65877.jpg">
+                    <#list details as d>
+                    <img src="${d.gdPicUrl}">
+                    </#list>
                 </div>
                 <div class="layui-tab-item layui-col-xs8 layui-col-xs-offset2">
                     <table class="layui-table bb-param" lay-size="lg">
@@ -126,18 +105,12 @@
                             <col width="70%">
                         </colgroup>
                         <tbody>
+                        <#list params as p>
                         <tr>
-                            <td>品牌</td>
-                            <td>哇爱</td>
+                            <td>${p.gpParamName}</td>
+                            <td>${p.gpParamValue}</td>
                         </tr>
-                        <tr>
-                            <td>重量</td>
-                            <td>1050g</td>
-                        </tr>
-                        <tr>
-                            <td>产地</td>
-                            <td>广州</td>
-                        </tr>
+                        </#list>
 
                         </tbody>
                     </table>

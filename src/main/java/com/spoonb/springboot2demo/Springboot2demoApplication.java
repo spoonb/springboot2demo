@@ -1,16 +1,15 @@
-package com.spoonb.babytuan;
+package com.spoonb.springboot2demo;
 
-import org.apache.ibatis.annotations.Mapper;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.spoonb.babytuan")
-public class BabytuanApplication {
+@MapperScan("com.spoonb.springboot2demo")
+public class Springboot2demoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BabytuanApplication.class, args);
+		SpringApplication.run(Springboot2demoApplication.class, args);
 	}
 
 }

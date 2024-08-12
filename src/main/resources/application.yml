@@ -13,4 +13,8 @@ spring:
 # 配置mybatis依赖的mapper路径
 # tips：classpath指项目编译后，在tomcat(也可以是别的服务器)中的WEB-INF/classes
 mybatis:
-  mapper-localtions: classpath:/mapper/*.xml
+  mapper-locations: classpath:/mapper/*.xml
+  # mybatis的一些细节配置
+  configuration:
+    # 自动将下划线体转成小驼峰体
+    map-underscore-to-camel-case: true
